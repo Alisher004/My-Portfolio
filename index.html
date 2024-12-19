@@ -12,20 +12,24 @@
 
 <body>
   <header class="header">
+    <nav class="language-switcher">
+      <select id="language-selector">
+        <option value="ky" selected>Кыргызча</option>
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+    </nav>
     <div class="container">
-      <h1 class="title">Менин Портфолиом</h1>
-      <nav>
-        <a href="#about">Мен жөнүндө</a>
-        <a href="#projects">Долбоорлор</a>
-        <a href="#contact">Байланыш</a>
-      </nav>
+      <h1 class="title">Талипжанов Алишер</h1>
+      <h2 class="h2">Фронтенд иштеп чыгуучу</h2>
     </div>
-  </header>
+
+  </header>  
 
   <section id="about" class="section about">
     <div class="container">
       <h2>Мен жөнүндө</h2>
-      <p>Менин аты жонум <strong>Талипжанов Алишер Манасович</strong>. Мен <strong>front end</strong> багытында
+      <p class="p">Менин аты жонум <strong>Талипжанов Алишер Манасович</strong>. Мен <strong>front end</strong> багытында
         веб-тиркемелерди иштеп чыгуучумун. Мен үчүн веб-сайттарды жаратуу—чыгармачылык менен технологияны
         айкалыштыруунун эң мыкты жолу. Менин максатым—бул тармакта өзүмдү көрсөтүп,пайдалануучуга ыңгайлуу жана көркөм
         веб-тиркемелерди түзүү жана оз тажрыйбамды чонойтуу. Менин 6 айлык тажрыйбамда <strong>JavaScript, React,
@@ -77,6 +81,42 @@
     </div>
   </section>
   
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Мои навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon" style="color: #e44d26;"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react skill-icon" style="color: #61dbfb;"></i>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-github skill-icon" style="color: #333;"></i>
+          <h3>GitHub</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square skill-icon" style="color: #007ACC;"></i>
+          <h3>TypeScript</h3>
+        </div>        
+        <div class="skill-card">
+          <i class="fab fa-bootstrap skill-icon" style="color: #563d7c;"></i>
+          <h3>Bootstrap</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
   <section id="contact" class="section contact">
     <div class="container">
@@ -88,9 +128,6 @@
         <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B8%D1%88%D0%B5%D1%80-%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D0%BE%D0%B2-79665032a/"
           target="_blank" class="icon">
           <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://twitter.com/your-profile" target="_blank" class="icon">
-          <i class="fab fa-twitter"></i> Twitter
         </a>
         <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" class="icon">
           <i class="fas fa-envelope"></i> Email
