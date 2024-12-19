@@ -90,7 +90,7 @@ body {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap:75px;
 }
 
 .icon {
