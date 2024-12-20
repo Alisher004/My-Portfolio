@@ -6,6 +6,7 @@ const translations = {
       about: "Мен жөнүндө",
       projects: "Долбоорлор",
       contact: "Контакт",
+      s: "Менин көндүмдөрүм",
       footer: "Бардык укуктар корголгон",
       project1: {
         title: "Долбоор 1",
@@ -30,6 +31,7 @@ const translations = {
       about: "Обо мне",
       projects: "Проекты",
       contact: "Контакты",
+      s: "Мои навыки",
       footer: "Все права защищены",
       project1: {
         title: "Проект 1",
@@ -51,6 +53,7 @@ const translations = {
       about: "About Me",
       projects: "Projects",
       contact: "Contact",
+      s: "My skills",
       footer: "All rights reserved",
       project1: {
         title: "Project 1",
@@ -78,6 +81,7 @@ const translations = {
   function updateContent(lang) {
     document.querySelector(".title").textContent = translations[lang].title;
     document.querySelector(".h2").textContent = translations[lang].h2;
+    document.querySelector(".s").textContent = translations[lang].s;
     document.querySelector(".p").textContent = translations[lang].p;
     document.querySelector("#about h2").textContent = translations[lang].about;
     document.querySelector("#projects h2").textContent = translations[lang].projects;

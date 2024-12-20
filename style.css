@@ -56,8 +56,6 @@ body {
   padding: 5rem 0;
   text-align: center;
   color: #f0f0f0;
-  width: 1300px;
-  margin: 0 auto;
 }
 
 .about h2 {
@@ -88,9 +86,7 @@ body {
 
 .icons {
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap:75px;
+  display: grid;
 }
 
 .icon {
@@ -197,11 +193,8 @@ body {
 .language-switcher {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  top: 200px;
-  right: 700px;
   animation: fadeIn 3s ease-in-out forwards;
-
+  margin: 0 auto;
 }
 
 #language-selector {
