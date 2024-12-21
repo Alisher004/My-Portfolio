@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   animation: fadeInDown 3s ease-in-out;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
