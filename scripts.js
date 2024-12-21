@@ -20,6 +20,7 @@ const translations = {
         title: "Долбоор 3",
         description: "Бул долбоор—онлайн бут кийим сатуу дүкөнү...",
       },
+      button: "Долбоорду көрүү",
       nav:{
         a: "Мен жөнүндө"
       }
@@ -45,6 +46,7 @@ const translations = {
         title: "Проект 3",
         description: "Этот проект — интернет-магазин обуви с удобным интерфейсом...",
       },
+      button: "Посмотреть проект",
     },
     en: {
       title: "Talipjanov Alisher", 
@@ -67,6 +69,7 @@ const translations = {
         title: "Project 3",
         description: "This project is an online shoe store with a user-friendly interface...",
       },
+      button: "View Project",
       nav:{
         a: "Мен жөнүндө"
       }
@@ -87,14 +90,22 @@ const translations = {
     document.querySelector("#projects h2").textContent = translations[lang].projects;
     document.querySelector("#contact h2").textContent = translations[lang].contact;
     document.querySelector(".footer p").textContent = `© 2024 ${translations[lang].footer}`;
-  
+
+    // Бардык кнопкаларды жаңыртуу
+    const buttons = document.querySelectorAll(".button");
+    buttons.forEach((button) => {
+        button.textContent = translations[lang].button;
+    });
+
+    // Проект карталарын жаңыртуу
     const projectCards = document.querySelectorAll(".project-card");
     const projects = ["project1", "project2", "project3"];
-  
+
     projectCards.forEach((card, index) => {
-      const project = translations[lang][projects[index]];
-      card.querySelector("h3").textContent = project.title;
-      card.querySelector("p").textContent = project.description;
+        const project = translations[lang][projects[index]];
+        card.querySelector("h3").textContent = project.title;
+        card.querySelector("p").textContent = project.description;
     });
-  }
+}
+
   
